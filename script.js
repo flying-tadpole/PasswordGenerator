@@ -14,28 +14,31 @@ function generatePassword() {
   var includeNumber = window.prompt("Include number? Y/N")
   var includeSpecial = window.prompt("Include special character? Y/N")
 
-  var choicesPool
+  var choicesPool = []
 
   if (includeLower == 'Y') {
-    choicesPool += lowerOptions
+    choicesPool.push(...lowerOptions)
   }
   if (includeUpper == 'Y') {
-    choicesPool += upperOptions
+    choicesPool.push(...upperOptions)
   }
   if (includeNumber == 'Y') {
-    choicesPool += numOptions
+    choicesPool.push(...numOptions)
   }
   if (includeSpecial == 'Y') {
-    choicesPool += specialOptions
+    choicesPool.push(...specialOptions)
   }
+  console.log(choicesPool)
 
-  var createdPassword
+  var createdPassword = ""
 
-  var index = Math.floor(Math.random() * choicesPool.length)
-
-  for (let i = 0; i < pickLength;) {
-    createdPassword = choicesPool[index];
-    i ++
+  for (let i = 0; i < pickLength; i++) {
+    numPick = Math.floor(Math.random() * choicesPool.length);
+    console.log(`this is numPick  ${numPick}`)
+    indexFind = choicesPool.at(numPick)
+    console.log(`this is indexFind ${indexFind}`)
+    createdPassword += indexFind
+    console.log(`this is createdPassword so far ${createdPassword}`)
   }
 
   return createdPassword
