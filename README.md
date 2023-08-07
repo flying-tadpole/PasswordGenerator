@@ -8,7 +8,8 @@ The goal was to write code that would ask the user for parameters and then gener
 
 ## Installation
 
-[Github Pages link.](https://flying-tadpole.github.io/BootcampChallenge2/)
+[Github Repo link.](https://github.com/flying-tadpole/PasswordGenerator)
+[Github Pages link.](https://flying-tadpole.github.io/PasswordGenerator/)
 
 Preview:
 ![preview of web app header](./assets/Screenshot%202023-07-31%20120203.png)
