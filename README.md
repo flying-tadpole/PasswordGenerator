@@ -13,7 +13,7 @@ The goal was to write code that would ask the user for parameters and then gener
 [Github Pages link.](https://flying-tadpole.github.io/PasswordGenerator/)
 
 Preview:
-![preview web app](./assets/Screenshot-2023-08-07-151645.png)
+![preview web app](./assets/appPreview.png)
 
 ## Credits
 
